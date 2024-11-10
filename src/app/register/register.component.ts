@@ -25,6 +25,7 @@ export class RegisterComponent implements OnInit {
     if (this.registerForm.valid) {
       const user: User = this.registerForm.value;
       console.log("Form Submitted!", user);
+      console.log(this.registerForm.value);
       // Add your form submission logic here
     } else {
       console.log("Form is invalid");
