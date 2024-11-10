@@ -20,4 +20,14 @@ export class RegisterComponent implements OnInit {
       password: ["", [Validators.required, Validators.minLength(6)]],
     });
   }
+
+  onSubmit(): void {
+    if (this.registerForm.valid) {
+      const user: User = this.registerForm.value;
+      console.log("Form Submitted!", user);
+      // Add your form submission logic here
+    } else {
+      console.log("Form is invalid");
+    }
+  }
 }
