@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+span {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  display: block;
+  text-align: center;
+  border: 2px solid #654321; /* Dark brown color */
+  font-size: 2em;
+  color: #654321; /* Dark brown color */
+}
