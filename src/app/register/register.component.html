@@ -1,15 +1,36 @@
-<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+<form
+  [formGroup]="registerForm"
+  (ngSubmit)="onSubmit()"
+  class="border p-6 space-y-4"
+>
   <div>
-    <label for="name">Name:</label>
-    <input id="name" formControlName="name" type="text" />
+    <label for="name" class="block mb-2">Name:</label>
+    <input
+      id="name"
+      formControlName="name"
+      type="text"
+      class="border p-2 w-full border-gray-300"
+    />
   </div>
   <div>
-    <label for="email">Email:</label>
-    <input id="email" formControlName="email" type="email" />
+    <label for="email" class="block mb-2">Email:</label>
+    <input
+      id="email"
+      formControlName="email"
+      type="email"
+      class="border p-2 w-full border-gray-300"
+    />
   </div>
   <div>
-    <label for="password">Password:</label>
-    <input id="password" formControlName="password" type="password" />
+    <label for="password" class="block mb-2">Password:</label>
+    <input
+      id="password"
+      formControlName="password"
+      type="password"
+      class="border p-2 w-full border-gray-300"
+    />
   </div>
-  <button type="submit">Register</button>
+  <button type="submit" class="bg-blue-500 text-white p-2 rounded">
+    Register
+  </button>
 </form>

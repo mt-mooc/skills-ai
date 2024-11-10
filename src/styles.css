@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-span {
+
+.app-title {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -10,3 +11,7 @@ span {
   font-size: 2em;
   color: #654321; /* Dark brown color */
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
